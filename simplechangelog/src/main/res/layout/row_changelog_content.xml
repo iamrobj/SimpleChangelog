@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.robj.simplechangelog.ui.adapter.ChangelogItem" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal"
+        android:textColor="@android:color/black"
+        android:textAppearance="?android:attr/textAppearanceSmall" >
+
+        <TextView
+            android:id="@+id/changelog_bullet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#424242"
+            android:text="•"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:id="@+id/changelog_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:textColor="#424242"
+            android:text="@{viewModel.text}"
+            tools:text="Dummy changelog"/>
+
+    </LinearLayout>
+
+</layout>

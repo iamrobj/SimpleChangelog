@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.robj.simplechangelog" >
+
+    <application>
+        <activity android:name=".ui.ChangelogActivity" android:theme="@style/AppTheme.Dialog" />
+    </application>
+
+</manifest>
