@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="AppTheme.Dialog" parent="Theme.AppCompat.Light.Dialog" >
+    <style name="ChangelogLibraryTheme.Dialog" parent="Theme.AppCompat.Light.Dialog" >
         <item name="colorPrimary">?attr/colorPrimary</item>
         <item name="colorPrimaryDark">?attr/colorPrimaryDark</item>
         <item name="colorAccent">?attr/colorAccent</item>
-        <!--<item name="android:textColor">@color/bg</item>-->
         <item name="android:windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
