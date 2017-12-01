@@ -2,7 +2,7 @@
     package="com.robj.simplechangelog" >
 
     <application>
-        <activity android:name=".ui.ChangelogActivity" android:theme="@style/AppTheme.Dialog" />
+        <activity android:name=".ui.ChangelogActivity" android:theme="@style/ChangelogLibraryTheme.Dialog" />
     </application>
 
 </manifest>

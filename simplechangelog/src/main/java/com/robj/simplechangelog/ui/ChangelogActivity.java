@@ -15,10 +15,13 @@ import com.robj.simplechangelog.ui.fragment.ChangelogDialogFragment;
 
 public class ChangelogActivity extends AppCompatActivity {
 
+    public static final String THEME = "THEME";
     public static final String CHANGELOG = ChangelogDialogFragment.CHANGELOG;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        if(getIntent() != null && getIntent().hasExtra(THEME))
+            setTheme(getIntent().getIntExtra(THEME, R.style.ChangelogLibraryTheme_Dialog));
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dialog);
         Bundle bundle = getIntent() != null && getIntent().getExtras() != null ? getIntent().getExtras() : new Bundle();

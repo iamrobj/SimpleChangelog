@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/radicallyreusable.iml" filepath="$PROJECT_DIR$/radicallyreusable.iml" />
       <module fileurl="file://$PROJECT_DIR$/simple_changelog_library.iml" filepath="$PROJECT_DIR$/simple_changelog_library.iml" />
       <module fileurl="file://$PROJECT_DIR$/simplechangelog/simplechangelog.iml" filepath="$PROJECT_DIR$/simplechangelog/simplechangelog.iml" />
     </modules>
