@@ -37,12 +37,12 @@ public class ChangelogAdapter extends BaseListRecyclerAdapter<Object, BaseViewHo
     }
 
     private BaseViewHolder createContentViewHolder(ViewGroup parent) {
-        final RowChangelogContentBinding binding = DataBindingUtil.inflate(LayoutInflater.from(getContext()), R.layout.row_changelog_content, parent, false);
+        final RowChangelogContentBinding binding = DataBindingUtil.inflate(LayoutInflater.from(getContext()), R.layout.cl_row_changelog_content, parent, false);
         return new ChangelogViewHolder(binding);
     }
 
     private BaseViewHolder createTitleViewHolder(ViewGroup parent) {
-        final RowChangelogTitleBinding binding = DataBindingUtil.inflate(LayoutInflater.from(getContext()), R.layout.row_changelog_title, parent, false);
+        final RowChangelogTitleBinding binding = DataBindingUtil.inflate(LayoutInflater.from(getContext()), R.layout.cl_row_changelog_title, parent, false);
         return new ChangelogTitleViewHolder(binding);
     }
 

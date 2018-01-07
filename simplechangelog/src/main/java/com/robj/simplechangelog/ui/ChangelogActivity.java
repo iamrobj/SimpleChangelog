@@ -23,7 +23,7 @@ public class ChangelogActivity extends AppCompatActivity {
         if(getIntent() != null && getIntent().hasExtra(THEME))
             setTheme(getIntent().getIntExtra(THEME, R.style.ChangelogLibraryTheme_Dialog));
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dialog);
+        setContentView(R.layout.cl_activity_dialog);
         Bundle bundle = getIntent() != null && getIntent().getExtras() != null ? getIntent().getExtras() : new Bundle();
         Fragment fragment = Fragment.instantiate(this, ChangelogDialogFragment.class.getName(), bundle);
         pushFragment(fragment, false);

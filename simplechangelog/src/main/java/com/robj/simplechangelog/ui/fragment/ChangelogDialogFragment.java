@@ -32,7 +32,7 @@ public class ChangelogDialogFragment extends BaseListFragment<ChangelogView, Cha
 
     @Override
     protected int getLayoutResId() {
-        return R.layout.fragment_changelog;
+        return R.layout.cl_fragment_changelog;
     }
 
     @Override
