@@ -1,7 +1,7 @@
 package com.robj.simplechangelog.ui.adapter;
 
 import com.robj.radicallyreusable.base.mvp.BaseViewHolder;
-import com.robj.simplechangelog.databinding.RowChangelogTitleBinding;
+import com.robj.simplechangelog.databinding.ClRowChangelogTitleBinding;
 
 /**
  * Created by Rob J on 21/09/17.
@@ -9,9 +9,9 @@ import com.robj.simplechangelog.databinding.RowChangelogTitleBinding;
 
 class ChangelogTitleViewHolder extends BaseViewHolder {
 
-    private final RowChangelogTitleBinding binding;
+    private final ClRowChangelogTitleBinding binding;
 
-    public ChangelogTitleViewHolder(RowChangelogTitleBinding binding) {
+    public ChangelogTitleViewHolder(ClRowChangelogTitleBinding binding) {
         super(binding.getRoot());
         this.binding = binding;
     }

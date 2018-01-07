@@ -8,8 +8,8 @@ import android.view.ViewGroup;
 import com.robj.radicallyreusable.base.base_list.BaseListRecyclerAdapter;
 import com.robj.radicallyreusable.base.mvp.BaseViewHolder;
 import com.robj.simplechangelog.R;
-import com.robj.simplechangelog.databinding.RowChangelogContentBinding;
-import com.robj.simplechangelog.databinding.RowChangelogTitleBinding;
+import com.robj.simplechangelog.databinding.ClRowChangelogContentBinding;
+import com.robj.simplechangelog.databinding.ClRowChangelogTitleBinding;
 
 /**
  * Created by Rob J on 21/09/17.
@@ -37,12 +37,12 @@ public class ChangelogAdapter extends BaseListRecyclerAdapter<Object, BaseViewHo
     }
 
     private BaseViewHolder createContentViewHolder(ViewGroup parent) {
-        final RowChangelogContentBinding binding = DataBindingUtil.inflate(LayoutInflater.from(getContext()), R.layout.cl_row_changelog_content, parent, false);
+        final ClRowChangelogContentBinding binding = DataBindingUtil.inflate(LayoutInflater.from(getContext()), R.layout.cl_row_changelog_content, parent, false);
         return new ChangelogViewHolder(binding);
     }
 
     private BaseViewHolder createTitleViewHolder(ViewGroup parent) {
-        final RowChangelogTitleBinding binding = DataBindingUtil.inflate(LayoutInflater.from(getContext()), R.layout.cl_row_changelog_title, parent, false);
+        final ClRowChangelogTitleBinding binding = DataBindingUtil.inflate(LayoutInflater.from(getContext()), R.layout.cl_row_changelog_title, parent, false);
         return new ChangelogTitleViewHolder(binding);
     }
 
