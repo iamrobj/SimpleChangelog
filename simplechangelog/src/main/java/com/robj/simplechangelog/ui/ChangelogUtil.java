@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.StyleRes;
 
+import com.robj.simplechangelog.ui.models.Changelog;
+
 /**
  * Created by jj on 29/11/17.
  */

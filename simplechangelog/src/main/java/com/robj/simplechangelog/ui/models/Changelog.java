@@ -1,4 +1,4 @@
-package com.robj.simplechangelog.ui;
+package com.robj.simplechangelog.ui.models;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -14,19 +14,20 @@ public class Changelog implements Parcelable {
 
     private final int versionCode;
     private final String title;
-    private final List<String> lines = new ArrayList();
+    private final List<LineItem> lines;
 
 
-    public Changelog(int versionCode, String title, List<String> lines) {
+    public Changelog(int versionCode, String title, List<LineItem> lines) {
         this.versionCode = versionCode;
         this.title = title;
+        this.lines = new ArrayList();
         this.lines.addAll(lines);
     }
 
     protected Changelog(Parcel in) {
         versionCode = in.readInt();
         title = in.readString();
-        lines.addAll(in.createStringArrayList());
+        lines = in.createTypedArrayList(LineItem.CREATOR);
     }
 
     public static final Creator<Changelog> CREATOR = new Creator<Changelog>() {
@@ -49,7 +50,7 @@ public class Changelog implements Parcelable {
         return title;
     }
 
-    public List<String> getLines() {
+    public List<LineItem> getLineItems() {
         return lines;
     }
 
@@ -62,6 +63,6 @@ public class Changelog implements Parcelable {
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeInt(versionCode);
         dest.writeString(title);
-        dest.writeStringList(lines);
+        dest.writeTypedList(lines);
     }
 }
