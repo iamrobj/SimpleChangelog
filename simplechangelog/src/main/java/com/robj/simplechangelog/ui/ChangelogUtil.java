@@ -77,8 +77,8 @@ public class ChangelogUtil {
     private static Intent getChangelogIntent(Context context, Changelog changelog, @StyleRes int styleResId) {
         Intent i = new Intent(context, ChangelogActivity.class);
         i.putExtra(ChangelogActivity.CHANGELOG, changelog);
-//        if(styleResId != 0)
-//            i.putExtra(ChangelogActivity.THEME, styleResId);
+        if(styleResId != 0)
+            i.putExtra(ChangelogActivity.THEME, styleResId);
         return i;
     }
 }

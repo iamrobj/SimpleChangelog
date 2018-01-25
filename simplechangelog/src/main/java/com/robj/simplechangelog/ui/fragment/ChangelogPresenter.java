@@ -29,12 +29,12 @@ class ChangelogPresenter extends BaseMvpPresenter<ChangelogView> {
             currentVersionCode = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionCode;
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
-            getView().showError(R.string.error_generic);
+            getView().showError(R.string.cl_error_generic);
             return;
         }
 
         if (bundle == null || bundle.isEmpty() || !bundle.containsKey(CHANGELOG)) {
-            getView().showError(R.string.error_no_changelog);
+            getView().showError(R.string.cl_error_no_changelog);
             return;
         }
 

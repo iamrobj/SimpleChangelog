@@ -1,7 +1,6 @@
 <resources>
-    <string name="app_name">Simple Changelog</string>
-    <string name="error_no_changelog">No changelog to display</string>
-    <string name="error_generic">Unable to load changelog</string>
-    <string name="changelog">Changelog</string>
-    <string name="progress_changelog">Loading changelog..</string>
+    <string name="cl_error_no_changelog">No changelog to display</string>
+    <string name="cl_error_generic">Unable to load changelog</string>
+    <string name="cl_changelog">Changelog</string>
+    <string name="cl_progress_changelog">Loading changelog..</string>
 </resources>

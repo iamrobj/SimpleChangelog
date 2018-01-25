@@ -42,7 +42,7 @@ public class ChangelogDialogFragment extends BaseListFragment<ChangelogView, Cha
 
     @Override
     protected String getSearchString() {
-        return getString(R.string.progress_changelog);
+        return getString(R.string.cl_progress_changelog);
     }
 
     @Override
