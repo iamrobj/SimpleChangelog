@@ -9,22 +9,15 @@
             type="com.robj.simplechangelog.ui.adapter.ChangelogTitle" />
     </data>
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/changelog_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginRight="5dp"
         android:layout_marginBottom="5dp"
-        android:textAppearance="?android:attr/textAppearanceSmall" >
-
-        <TextView
-            android:id="@+id/changelog_text"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="5dip"
-            android:layout_weight="1"
-            android:textStyle="bold"
-            android:text="@{viewModel.text}" />
-
-    </LinearLayout>
+        android:textStyle="bold"
+        android:text="@{viewModel.text}"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        tools:text="This is where the changelog line item would be shown in the list"/>
 
 </layout>
