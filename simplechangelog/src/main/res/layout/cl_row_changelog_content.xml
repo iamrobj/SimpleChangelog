@@ -14,14 +14,12 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
         android:orientation="horizontal"
-        android:textColor="@android:color/black"
         android:textAppearance="?android:attr/textAppearanceSmall" >
 
         <TextView
             android:id="@+id/changelog_bullet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#424242"
             android:text="•"
             android:layout_marginRight="5dp" />
 
@@ -31,7 +29,6 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="5dp"
             android:layout_weight="1"
-            android:textColor="#424242"
             android:text="@{viewModel.text}"
             tools:text="Dummy changelog"/>
 

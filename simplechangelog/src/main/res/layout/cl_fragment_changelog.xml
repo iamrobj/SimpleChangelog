@@ -12,7 +12,6 @@
         android:layout_marginBottom="10dp"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="@android:color/black"
         android:text="@string/cl_changelog" />
 
     <android.support.v4.widget.SwipeRefreshLayout
@@ -57,7 +56,6 @@
         android:padding="10dp"
         android:background="?android:selectableItemBackground"
         android:layout_gravity="right"
-        android:textColor="?attr/colorPrimaryDark"
         android:textSize="13sp"
         android:text="@android:string/ok" />
 
