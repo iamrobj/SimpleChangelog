@@ -13,26 +13,30 @@ import com.robj.simplechangelog.ui.models.Changelog;
 
 public class ChangelogUtil {
 
+    public static boolean isChangelogRequired(Context context) {
+        try {
+            int currentVersionCode = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionCode;
+            int versionCode = ChangelogPrefs.getLastChangelogShown(context);
+            if(versionCode > 0) {
+                if (versionCode < currentVersionCode)
+                    return true;
+            } else
+                ChangelogPrefs.setChangelogShown(context, currentVersionCode);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+    
     public static void showChangelogIfRequired(Context context, Changelog changelog) {
         showChangelogIfRequired(context, changelog, 0);
     }
 
     public static void showChangelogIfRequired(Context context, Changelog changelog, @StyleRes int styleResId) {
-        int currentVersionCode;
-        try {
-            currentVersionCode = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionCode;
-        } catch (Exception e) {
-            e.printStackTrace();
-            return;
+        if (isChangelogRequired(context)) {
+             showChangelog(context, changelog, styleResId);
+             NotificationUtils.cancelNotification(context, NotificationUtils.CHANGELOG_ID);
         }
-        int versionCode = ChangelogPrefs.getLastChangelogShown(context);
-        if(versionCode > 0) {
-             if (versionCode < currentVersionCode) {
-                 showChangelog(context, changelog, styleResId);
-                 NotificationUtils.cancelNotification(context, NotificationUtils.CHANGELOG_ID);
-             }
-        } else
-            ChangelogPrefs.setChangelogShown(context, currentVersionCode);
     }
 
     public static void showChangelogNotifIfRequired(Context context, Changelog changelog,
