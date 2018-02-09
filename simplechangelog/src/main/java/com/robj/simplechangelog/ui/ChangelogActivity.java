@@ -10,7 +10,7 @@ import com.robj.simplechangelog.R;
 import com.robj.simplechangelog.ui.fragment.ChangelogDialogFragment;
 
 /**
- * Created by jj on 11/06/17.
+ * Created by Rob J on 11/06/17.
  */
 
 public class ChangelogActivity extends AppCompatActivity {

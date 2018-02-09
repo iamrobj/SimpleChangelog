@@ -9,7 +9,7 @@ import com.robj.simplechangelog.R;
 import com.robj.simplechangelog.ui.adapter.ChangelogAdapter;
 
 /**
- * Created by JJ on 22/05/15.
+ * Created by Rob J on 22/05/15.
  */
 public class ChangelogDialogFragment extends BaseListFragment<ChangelogView, ChangelogPresenter, ChangelogAdapter, Object> implements ChangelogView {
 

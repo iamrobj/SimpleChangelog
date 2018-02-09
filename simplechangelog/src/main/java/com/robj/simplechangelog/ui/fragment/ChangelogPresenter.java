@@ -7,10 +7,10 @@ import android.os.Bundle;
 
 import com.robj.radicallyreusable.base.mvp.fragment.BaseMvpPresenter;
 import com.robj.simplechangelog.R;
-import com.robj.simplechangelog.ui.models.Changelog;
 import com.robj.simplechangelog.ui.ChangelogPrefs;
 import com.robj.simplechangelog.ui.adapter.ChangelogItem;
 import com.robj.simplechangelog.ui.adapter.ChangelogTitle;
+import com.robj.simplechangelog.ui.models.Changelog;
 import com.robj.simplechangelog.ui.models.LineItem;
 
 import java.util.ArrayList;

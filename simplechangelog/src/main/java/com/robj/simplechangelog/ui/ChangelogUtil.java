@@ -8,7 +8,7 @@ import android.support.annotation.StyleRes;
 import com.robj.simplechangelog.ui.models.Changelog;
 
 /**
- * Created by jj on 29/11/17.
+ * Created by Rob J on 29/11/17.
  */
 
 public class ChangelogUtil {
@@ -27,7 +27,7 @@ public class ChangelogUtil {
         }
         return false;
     }
-    
+
     public static void showChangelogIfRequired(Context context, Changelog changelog) {
         showChangelogIfRequired(context, changelog, 0);
     }

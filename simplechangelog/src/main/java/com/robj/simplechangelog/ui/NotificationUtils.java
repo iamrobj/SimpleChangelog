@@ -8,7 +8,7 @@ import android.support.annotation.DrawableRes;
 import android.support.v4.app.NotificationCompat;
 
 /**
- * Created by jj on 29/11/17.
+ * Created by Rob J on 29/11/17.
  */
 
 class NotificationUtils {

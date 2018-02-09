@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by jj on 29/11/17.
+ * Created by Rob J on 29/11/17.
  */
 
 public class Changelog implements Parcelable {

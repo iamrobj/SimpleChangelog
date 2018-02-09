@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 /**
- * Created by jj on 25/01/18.
+ * Created by Rob J on 25/01/18.
  */
 
 public class LineItem implements Parcelable {

@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 /**
- * Created by jj on 29/11/17.
+ * Created by Rob J on 29/11/17.
  */
 
 public class ChangelogPrefs {
