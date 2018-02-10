@@ -19,7 +19,7 @@ public class ChangelogBuilder {
         return this;
     }
 
-    public ChangelogBuilder addLineItem(String line) {
+    public ChangelogBuilder addLineItem(CharSequence line) {
         this.lines.add(new LineItem(line));
         return this;
     }

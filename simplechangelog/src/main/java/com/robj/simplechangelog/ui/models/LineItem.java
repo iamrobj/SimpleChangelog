@@ -2,6 +2,7 @@ package com.robj.simplechangelog.ui.models;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+import android.text.TextUtils;
 
 /**
  * Created by Rob J on 25/01/18.
@@ -9,22 +10,22 @@ import android.os.Parcelable;
 
 public class LineItem implements Parcelable {
 
-    private final String line;
+    private final CharSequence line;
     private int minSdkVersion, maxSdkVersion;
 
-    public LineItem(String line) {
+    public LineItem(CharSequence line) {
         this.line = line;
     }
 
     protected LineItem(Parcel in) {
-        line = in.readString();
+        line = TextUtils.CHAR_SEQUENCE_CREATOR.createFromParcel(in);
         minSdkVersion = in.readInt();
         maxSdkVersion = in.readInt();
     }
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-        dest.writeString(line);
+        TextUtils.writeToParcel(line, dest, flags);
         dest.writeInt(minSdkVersion);
         dest.writeInt(maxSdkVersion);
     }
@@ -46,7 +47,7 @@ public class LineItem implements Parcelable {
         }
     };
 
-    public String getLine() {
+    public CharSequence getLine() {
         return line;
     }
 
